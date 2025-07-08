@@ -676,6 +676,7 @@ nav {
   padding: 10% 0 0 10%;
   margin-left: 10em;
   margin-right: -10em;
+  z-index: -1;
 }
 
 
@@ -1010,7 +1011,9 @@ nav {
   .nav_list ul {
     gap: 1em;
   }
-
+  .ideals {
+    background-size: 125%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -1027,6 +1030,7 @@ nav {
   .about_home-header {
     top: 0em;
   }
+ 
 }
 
 @media (max-width: 1200px) {

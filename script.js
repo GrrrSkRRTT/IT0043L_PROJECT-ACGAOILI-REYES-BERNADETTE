@@ -53,13 +53,27 @@ document.addEventListener('click', event => {
             blur.classList.remove("blur-active");
         }
 
+        if (btn.id === "search-btn") {
+            const inputGet = document.querySelector('.search-input_js');
+            const inputSearch = document.querySelector('.search-input_js').value;
+
+            if (document.body.innerText.toLowerCase().includes(inputSearch.toLowerCase()))
+                alert('Text exist!');
+            else
+                alert('Unknown!');
+
+            inputGet.value = '';
+            search.classList.remove("show");    
+            blur.classList.remove("blur-active");
+        }
+
         if (btn.id === 'sign_up-register') {
             const name = document.getElementById('name-reg');
             const username = document.getElementById('username-reg');
             const email = document.getElementById('email-reg');
             const pass = document.getElementById('pass-reg');
 
-            if (name.value && userName.value && email.value && pass.value) {
+            if (name.value && username.value && email.value && pass.value) {
                 alert("Successfully Registered!");
                 name.value = "";
                 username.value = "";
