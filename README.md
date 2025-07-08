@@ -4,5 +4,5 @@
 "login.html"
 -- the page where user are able to sign in for their account.
 
-"index.html"
+Other html pages:
 -- the page where the contents are.
