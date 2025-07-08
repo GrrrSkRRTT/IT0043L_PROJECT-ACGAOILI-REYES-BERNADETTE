@@ -12,14 +12,16 @@
 <body>
     <nav>
         <div class="nav_logo">
-            <img src="Logo.png" alt="" class="logo">
+            <a href="index.html">
+                <img src="Logo.png" alt="" class="logo">
+            </a>
         </div>
      
         <div class="nav_list nav_sections-logos">
             <ul>
                 <li><a href="login.html"><i class="bi-person-circle"></i></a></li>
                 <li>|</li>
-                <li><a href=""><i class="bi bi-search"></i></a></li>
+                <li><a href="" id="search"><i class="bi bi-search"></i></a></li>
                 <li>|</li>
                 <li><a href="cart.html"><i class="bi bi-cart"></i></a></li>
                 <li>|</li>
@@ -27,6 +29,7 @@
             </ul>
         </div>
     </nav>
+    <div class="blur"></div>
     <div class="nav-hamburger_menu .show">
         <div class="nav_hamburger">
             <button id="close-menu"><i class="bi bi-x"></i></button>
@@ -38,17 +41,33 @@
                 </ul>
         </div>
     </div>
-
+    <div class="search-wrapper">
+        <div class="search">
+            <div class="close-button_search">
+                <button id="close-search"><i class="bi bi-x"></i></button>
+            </div>
+            <div class="search-bar">
+                <div class="search_input">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="search_btn">
+                    <button>
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="log_in">
             <div class="log-in_header">
                 <h1>CREATE YOUR ACCOUNT</h1>
             </div>
             <div class="log-in_input-cred">
-                <input type="text" placeholder="NAME" class="input-creds_log"> <br>
-                <input type="text" placeholder="USERNAME" class="input-creds_log"> <br>
-                <input type="email" placeholder="EMAIL/PHONE NUMBER" class="input-creds_log"> <br>
-                <input type="password" placeholder="PASSWORD" id="" class="input-creds_log"><br>
-                <input type="button" value="SIGN IN" class="sign_up sign_up-register">
+                <input type="text" placeholder="NAME" class="input-creds_log" id="name-reg"> <br>
+                <input type="text" placeholder="USERNAME" class="input-creds_log" id="username-reg"> <br>
+                <input type="email" placeholder="EMAIL/PHONE NUMBER" class="input-creds_log" id="email-reg"> <br>
+                <input type="password" placeholder="PASSWORD" class="input-creds_log" id="pass-reg"><br>
+                <input type="button" value="SIGN IN" class="sign_up sign_up-register" id="sign_up-register">
             </div>
             <div class="log-in_social-links">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>

@@ -12,14 +12,16 @@
 <body>
     <nav>
         <div class="nav_logo">
-            <img src="Logo.png" alt="" class="logo">
+            <a href="index.html">
+                <img src="Logo.png" alt="" class="logo">
+            </a>
         </div>
-     
+        
         <div class="nav_list nav_sections-logos">
             <ul>
                 <li><a href="login.html"><i class="bi-person-circle"></i></a></li>
                 <li>|</li>
-                <li><a href=""><i class="bi bi-search"></i></a></li>
+                <li><a href="" id="search"><i class="bi bi-search"></i></a></li>
                 <li>|</li>
                 <li><a href="cart.html"><i class="bi bi-cart"></i></a></li>
                 <li>|</li>
@@ -27,6 +29,7 @@
             </ul>
         </div>
     </nav>
+    <div class="blur"></div>
     <div class="nav-hamburger_menu .show">
         <div class="nav_hamburger">
             <button id="close-menu"><i class="bi bi-x"></i></button>
@@ -38,6 +41,24 @@
                 </ul>
         </div>
     </div>
+    <div class="search-wrapper">
+        <div class="search">
+            <div class="close-button_search">
+                <button id="close-search"><i class="bi bi-x"></i></button>
+            </div>
+            <div class="search-bar">
+                <div class="search_input">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="search_btn">
+                    <button>
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section class="home_header">
         <div class="image-home_header about-image_header">
             <img src="Coffe-Bean_Footer.png" alt="">
@@ -60,17 +81,17 @@
                 <div class="carousel">
                     <div class="product">
                         <img src="Mango_Shake.png" alt="">
-                        <a href="" class="caption" id="product">MANGO SHAKE</a>
+                        <a href="" class="caption caption_menu" id="product">MANGO SHAKE</a>
                         <p>290 PHP</p>
                     </div>
                     <div class="product">
                         <img src="Ube_Machiato.png" alt="">
-                        <a href="" class="caption" id="product">UBE MACHIATO</a>
+                        <a href="" class="caption caption_menu" id="product" id="caption">UBE MACHIATO</a>
                         <p>290 PHP</p>
                     </div>
                     <div class="product">
                         <img src="Iced_Latte.png" alt="">
-                        <a href="" class="caption" id="product">ICED LATTE</a>
+                        <a href="" class="caption caption_menu" id="product">ICED LATTE</a>
                         <p>290 PHP</p>
                     </div>
                 </div>            
@@ -88,17 +109,17 @@
                 <div class="carousel">
                     <div class="product">
                         <img src="Pancake.png" alt="">
-                        <a href="" class="caption" id="product">PANCAKE</a>
+                        <a href="" class="caption caption_menu" id="product">PANCAKE</a>
                         <p>290 PHP</p>
                     </div>
                     <div class="product">
                         <img src="Spag.png" alt="">
-                        <a href="" class="caption" id="product">SPAGHETTI</a>
+                        <a href="" class="caption caption_menu" id="product">SPAGHETTI</a>
                         <p>290 PHP</p>
                     </div>
                     <div class="product">
                         <img src="Muffin.png" alt="">
-                        <a href="" class="caption" id="product">MUFFIN</a>
+                        <a href="" class="caption caption_menu" id="product">MUFFIN</a>
                         <p>290 PHP</p>
                     </div>
                 </div>
