@@ -725,8 +725,8 @@ nav {
 
 .vision {
   text-align: right;
-  align-items: flex-end;
 }
+
 .mission p,
 .vision p {
   font-size: 1.4em;
@@ -1019,7 +1019,13 @@ nav {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
+  .ideal img {
+    margin-right: 2.5em;
+  }
+  .mission {
+  padding: 0 0 0 2.5em;
+  }
   .wrapper_check-out button {
     font-size: 1em;
     padding: 2% 3%;
