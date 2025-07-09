@@ -1017,15 +1017,13 @@ nav {
   .ideals {
     background-size: 125%;
   }
+  .ideal {
+    gap: 1em
+  }
 }
 
 @media (max-width: 550px) {
-  .ideal img {
-    margin-right: 2.5em;
-  }
-  .mission {
-  padding: 0 0 0 2.5em;
-  }
+ 
   .wrapper_check-out button {
     font-size: 1em;
     padding: 2% 3%;
@@ -1039,7 +1037,6 @@ nav {
   .about_home-header {
     top: 0em;
   }
- 
 }
 
 @media (max-width: 1200px) {
