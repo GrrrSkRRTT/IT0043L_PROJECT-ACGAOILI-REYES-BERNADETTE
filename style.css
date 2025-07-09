@@ -1043,8 +1043,9 @@ nav {
     padding-right: 1em;
   }
   .about_home-header {
-    top: 0em;
+    top: 19em;
   }
+  .update h1,
   .responsive_about h1,
   .ideals_text h1{
     font-size: 1.5em;
@@ -1052,10 +1053,14 @@ nav {
   .ideal-wrapper {
     gap: 1em
   }
+  .update p {
+    font-size: 0.8em;
+  }
   .responsive_about p,
   .ideals_text p {
     font-size: 0.6em
   }
+  
 }
 
 @media (max-width: 1200px) {
@@ -1066,9 +1071,7 @@ nav {
     padding-right: 1em;
   }
 
-  .about_home-header {
-    top: 21em;
-  }
+
   .wrapper_check-out button {
     font-size: 1em;
   }
