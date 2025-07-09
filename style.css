@@ -379,6 +379,10 @@ nav {
   width: 100%;
 }
 
+.about-header {
+ margin-bottom: 0;
+}
+
 .image-home_header img{
   width: 100%;
 }
@@ -697,6 +701,7 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   padding: 18% 5%;
+  margin-top: -5em;
 }
 
 .ideal-wrapper {
@@ -715,7 +720,6 @@ nav {
   align-items: center;
   gap: 2em;
   color: #4e1e08;
-
 }
 
 .ideal h1 {
@@ -889,6 +893,8 @@ nav {
 .wrapper_check-out button:hover{
   background-color: rgb(92, 241, 92);
 }
+
+
 @media (max-width: 850px) {
   .map img {
     width: 100%;
@@ -1039,13 +1045,14 @@ nav {
   .about_home-header {
     top: 0em;
   }
-
+  .responsive_about h1,
   .ideals_text h1{
     font-size: 1.5em;
   }
   .ideal-wrapper {
     gap: 1em
   }
+  .responsive_about p,
   .ideals_text p {
     font-size: 0.6em
   }
