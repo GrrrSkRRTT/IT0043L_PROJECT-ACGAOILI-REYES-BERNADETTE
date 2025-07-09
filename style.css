@@ -715,6 +715,7 @@ nav {
   align-items: center;
   gap: 2em;
   color: #4e1e08;
+  margin: 2em;
 }
 
 .ideal h1 {
@@ -1037,6 +1038,7 @@ nav {
   .about_home-header {
     top: 0em;
   }
+
 }
 
 @media (max-width: 1200px) {
