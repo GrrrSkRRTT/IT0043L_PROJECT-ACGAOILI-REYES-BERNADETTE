@@ -1021,6 +1021,7 @@ nav {
   .ideal {
     gap: 1em
   }
+
 }
 
 @media (max-width: 550px) {
@@ -1039,6 +1040,15 @@ nav {
     top: 0em;
   }
 
+  .ideals_text h1{
+    font-size: 1.5em;
+  }
+  .ideal-wrapper {
+    gap: 0.2em
+  }
+  .ideals_text p {
+    font-size: 0.6em
+  }
 }
 
 @media (max-width: 1200px) {
