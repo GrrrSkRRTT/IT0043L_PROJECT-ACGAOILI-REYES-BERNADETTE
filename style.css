@@ -11,10 +11,6 @@ body {
   min-height: 100%;
 }
 
-body::-webkit-scrollbar {
-    display: none;
-}
-
 nav {
   display: flex;
   top: 0;
@@ -928,12 +924,7 @@ nav {
 
 
 @media (max-width: 1700px) {
-  .option_special {
-    display: block;
-  }
-  .links_pages {
-    display: none;
-  }
+  
   .nav_logo {
     flex-basis: 80%;
   }
@@ -950,10 +941,22 @@ nav {
   .kape-tayo_special {
     padding-top: 15em;
   }
-
+  .links_pages {
+    margin-right: 3.5em;
+    gap: 3em;
+  }
+  .nav_list ul{
+    gap: 3.8em;
+  }
 }
 
 @media (max-width: 1300px) {
+  .links_pages {
+    display: none;
+  }
+  .option_special {
+    display: block;
+  }
   .search_input input{
     width: 95%;
   }
