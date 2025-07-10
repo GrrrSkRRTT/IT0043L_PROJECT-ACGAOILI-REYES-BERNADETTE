@@ -46,7 +46,7 @@ nav {
   flex-basis: 65%;
   align-items: center;
   justify-content: flex-end;
-  gap: 4em;
+  gap: 5em;
 }
 .option_special{
   display: none;
@@ -59,7 +59,7 @@ nav {
 }
 
 .links_pages a:hover {
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 700;
 }
 
