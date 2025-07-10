@@ -60,6 +60,7 @@ nav {
 
 .links_pages a:hover {
   font-size: 1.2em;
+  font-weight: 700;
 }
 
 .nav_log-in input {
