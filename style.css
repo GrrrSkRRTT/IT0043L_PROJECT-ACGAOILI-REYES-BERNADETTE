@@ -17,7 +17,6 @@ body::-webkit-scrollbar {
 
 nav {
   display: flex;
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -29,9 +28,9 @@ nav {
 }
 .nav_list {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    margin: 1em;
+    margin: 1em 2em 1em 0;
 }
 
 .nav_logo img {
@@ -39,7 +38,28 @@ nav {
   margin: 1em 0 1em 2em;
 }
 .nav_logo {
-  flex-basis: 80%;
+  flex-basis: 20%;
+}
+.links_pages {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 65%;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4em;
+}
+.option_special{
+  display: none;
+}
+
+.links_pages a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.links_pages a:hover {
+  font-size: 1.2em;
 }
 
 .nav_log-in input {
@@ -55,11 +75,11 @@ nav {
   list-style: none;
   padding: 0;
   margin: 0;
-  gap: 2em;
+  gap: 4.5em;
 }
 
 .nav_sections-logos {
-  flex-basis: 20%;
+  flex-basis: 15%;
 }
 
 .nav_list ul li a {
@@ -366,10 +386,11 @@ nav {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 50em;
+  height: 45em;
   background: radial-gradient(circle at center, #8a3e00, #4e1e08);
   clip-path: polygon(0 0, 100% 0, 100% 70%, 90% 80%, 80% 75%, 70% 85%, 60% 90%, 50% 80%, 40% 82%, 25% 90%, 20% 88%, 10% 98%, 0 90%);
   margin-bottom: 4em;
+  margin-top: -2em;
 }
 
 .image-home_header {
@@ -377,6 +398,16 @@ nav {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+.special_header-home {
+  align-items: flex-start;
+  padding-top: 8em;
+}
+
+
+.kape-tayo_special {
+  padding-top: 10em;
 }
 
 .about-header {
@@ -895,7 +926,63 @@ nav {
 }
 
 
+@media (max-width: 1700px) {
+  .option_special {
+    display: block;
+  }
+  .links_pages {
+    display: none;
+  }
+  .nav_logo {
+    flex-basis: 80%;
+  }
+  .nav_sections-logos {
+    flex-basis: 20%;
+  }
+  nav {
+    position: fixed;
+  }
+  .special_header-home {
+    padding-top: 12em;
+  }
+
+  .kape-tayo_special {
+    padding-top: 15em;
+  }
+
+}
+
+@media (max-width: 1300px) {
+  .search_input input{
+    width: 95%;
+  }
+  .search_btn {
+    padding-right: 1em;
+  }
+  .special_header-home_section {
+    height: 35em;
+  }
+  
+  .wrapper_check-out button {
+    font-size: 1em;
+  }
+  .cart-footer {
+    margin-top: 15em;
+  }
+  .special_header-home {
+    padding-top: 10em;
+  }
+
+  .kape-tayo_special {
+    padding-top: 12em;
+  }
+}
+
+
 @media (max-width: 850px) {
+  .nav_sections-logos {
+    justify-content: center;
+  }
   .map img {
     width: 100%;
   }
@@ -1018,20 +1105,24 @@ nav {
   .nav_sections-logos {
     flex-basis: 30%;
   }
-  .nav_list ul {
-    gap: 1em;
-  }
   .ideals {
     background-size: 125%;
   }
   .ideal {
     gap: 1em
   }
-
+  .menu_special {
+    margin-top: 1em;
+  }
 }
 
 @media (max-width: 550px) {
- 
+  .nav_list ul {
+    gap: 2em;
+  }
+  .nav_list {
+    margin-right: 1em;
+  }
   .wrapper_check-out button {
     font-size: 1em;
     padding: 2% 3%;
@@ -1060,22 +1151,14 @@ nav {
   .ideals_text p {
     font-size: 0.6em
   }
-  
-}
-
-@media (max-width: 1200px) {
-  .search_input input{
-    width: 95%;
+  .special_header-home_section {
+    height: 25em;
   }
-  .search_btn {
-    padding-right: 1em;
+  .special_header-home {
+    padding-top: 8em;
   }
 
-
-  .wrapper_check-out button {
-    font-size: 1em;
-  }
-  .cart-footer {
-    margin-top: 15em;
+  .kape-tayo_special {
+    padding-top: 10em;
   }
 }

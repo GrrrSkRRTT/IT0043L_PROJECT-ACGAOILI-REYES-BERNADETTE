@@ -1,3 +1,5 @@
+let statusUser = localStorage.getItem('statusUser') === 'true';
+
 document.addEventListener('click', event => {
     const target = event.target;
     const a = target.closest('a');
@@ -22,22 +24,27 @@ document.addEventListener('click', event => {
 
         if (a.id === 'product') {
             event.preventDefault();
-            const product = a.closest('.product');
-            const productName = product.querySelector('.caption').textContent;
-            const productPrice = product.querySelector('p').textContent;
-            const productImage = product.querySelector('img').src;
+            if (!statusUser) {
+                alert("User is not logged in!")
+                window.location.href = 'login.html';
+                return;
+            }
+                const product = a.closest('.product');
+                const productName = product.querySelector('.caption').textContent;
+                const productPrice = product.querySelector('p').textContent;
+                const productImage = product.querySelector('img').src;
 
-            const productData = {
-                name: productName,
-                price: productPrice,
-                image: productImage
-            };
+                const productData = {
+                    name: productName,
+                    price: productPrice,
+                    image: productImage
+                };
 
-            let cart = JSON.parse(localStorage.getItem('cart')) || [];
-            cart.push(productData);
-            localStorage.setItem('cart', JSON.stringify(cart));
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                cart.push(productData);
+                localStorage.setItem('cart', JSON.stringify(cart));
 
-            alert(productName + ' added to cart!');
+                alert(productName + ' added to cart!');
         }
         
     }
@@ -90,6 +97,7 @@ document.addEventListener('click', event => {
 
             if (name.value && pass.value) {
                 alert("Successfully Logged In!");
+                localStorage.setItem('statusUser', 'true');
                 name.value = "";
                 pass.value = "";
             } else {
@@ -213,3 +221,5 @@ window.addEventListener('DOMContentLoaded', () => {
         cartWrapper.appendChild(productCart);
     });
 });
+
+
